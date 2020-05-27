@@ -12,8 +12,8 @@
   -webkit-box-shadow: 0px 0px 12px 0px rgba(82, 74, 74, 0.75);
   -moz-box-shadow: 0px 0px 12px 0px rgba(82, 74, 74, 0.75);
 }
-.logo{
-  height:70px;
+.logo {
+  height: 70px;
 }
 /* ____________________________________________________________________ */
 .nav_sec {
@@ -23,7 +23,7 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
-  z-index:1;
+  z-index: 1;
 }
 .logo_bars {
   margin: auto 60px;
@@ -39,20 +39,22 @@ nav ul {
   margin: auto 0px;
 }
 nav ul li {
-  list-style-type:none;
+  list-style-type: none;
+  margin: auto 0px;
 }
-.navLinks {
-  color: #29303b;
+.navLinks{
+  color: #444;
   font-size: 17px;
   font-family: sans-serif;
   letter-spacing: 1px;
 }
+
 .navLinks:hover {
   color: #29303b94;
   text-decoration: none;
 }
 
-@media screen and (max-width: 1040px) {
+/* @media screen and (max-width: 1040px) {
   .nav_sec {
     display: block;
   }
@@ -69,11 +71,11 @@ nav ul li {
     display: flex;
     justify-content: space-between;
   }
-.bars {
+  .bars {
     margin: auto 0px;
     cursor: pointer;
   }
-nav {
+  nav {
     width: 100%;
     background-color: #444;
     padding: 60px 0px;
@@ -118,7 +120,7 @@ nav {
   .logo_bars {
     margin: auto 30px;
   }
-}
+} */
 /* __________________________________________________________________________ */
 /* Services Section  */
 .service_sec {
@@ -138,7 +140,6 @@ nav {
   display: inline-block;
   padding: 20px;
   margin: 50px;
-
 }
 
 .fas,
@@ -158,7 +159,7 @@ nav {
   font-size: 22px;
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width: 540px) {
   .service_sec {
     padding: 40px 30px;
   }
@@ -201,7 +202,7 @@ nav {
 /* carousel */
 .crsl_1 {
   height: 600px;
-  background: url('../Image/892.jpg');
+  background: url("../Image/892.jpg");
   background-size: cover;
   background-position: center;
   animation: fadeIn;
@@ -211,7 +212,7 @@ nav {
 
 .crsl_2 {
   height: 600px;
-  background: url('../Image/893.jpg');
+  background: url("../Image/893.jpg");
   background-size: cover;
   background-position: center;
   color: #444;
@@ -221,7 +222,7 @@ nav {
 
 .crsl_3 {
   height: 600px;
-  background: url('../Image/894.jpg');
+  background: url("../Image/894.jpg");
   background-size: cover;
   background-position: center;
   color: #444;
@@ -280,7 +281,7 @@ nav {
   animation-duration: 3s;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width: 950px) {
   .under_nav_img {
     display: none;
   }
@@ -310,7 +311,6 @@ nav {
   padding: 100px 60px 50px 60px;
   color: #444;
   text-align: center;
-
 }
 
 #carouselExampleIndicators {
@@ -322,7 +322,6 @@ nav {
   font-size: 30px;
   letter-spacing: 2px;
   font-weight: 600;
-
 }
 
 .avatar {
@@ -360,7 +359,7 @@ nav {
 .cstmr_cmpny {
   height: 70px;
   width: 70px;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 /* meet_team_section */
@@ -408,7 +407,7 @@ nav {
   color: #444;
 }
 
-@media screen and (max-width:440px) {
+@media screen and (max-width: 440px) {
   .meet_team_section {
     padding: 70px 0px 30px 0px;
   }
@@ -429,7 +428,7 @@ nav {
 /* btm_cl_t_ac */
 .btm_cl_t_ac {
   height: 500px;
-  background: url('../Image/start.jpg') center;
+  background: url("../Image/start.jpg") center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -470,4 +469,72 @@ nav {
   text-decoration: none;
   background-color: #ffff;
   color: #444;
+}
+/* nav_mega */
+.fa-chevron-down{
+  color: #444;
+  font-size:13px;
+  margin: auto 0px;
+}
+.srvc_links_nv:hover .fa-chevron-down{
+  color: #4444446b;
+}
+.srvc1,
+.srvc2,
+.srvc3{
+  display: flex;
+  justify-content:space-between;
+  padding-bottom:30px;
+}
+.srvc3{
+  padding-bottom:0px;
+}
+.nav_mega{
+  position:fixed;
+  top:70px;
+  width:100%;
+  z-index: 999;
+  background-color: #444;
+  padding:20px;
+  height:100vh;
+}
+.nav_mega_title{
+  font-size:17px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom:30px;
+  padding-bottom:5px;
+  border-bottom:2px solid #6e6e6e;
+}
+.nav_mega_itm{
+  width:320px;
+  height:auto;
+}
+.mega_links{
+  display: block;
+  color:#d2d2d2;
+  font-size:14px;
+  letter-spacing: 1px;
+  line-height:25px;
+}
+.mega_links:hover{
+  color:#fff;
+  text-decoration: none;
+}
+.nav_mega_cntnt{
+  position: relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.fa-times{
+  color: #d2d2d2;
+  font-size:30px;
+  cursor: pointer;
+  position: fixed;
+  right:70px;
+  top:100px;
+}
+.nav_mega_2{
+display: none;
 }
