@@ -9,12 +9,15 @@ $(".srvc_links_nv").click(() => {
 });
 window.addEventListener("scroll", () => {
   const e = document.querySelector(".nav_sec");
+  const f = document.querySelector(".mobile_nav");
   window.scrollY > 90 && (e.style.backgroundColor = "#fff");
   if (window.scrollY > 120) {
     e.classList.add("nav_shadow");
+    f.classList.add("nav_shadow");
   }
   if (window.scrollY < 120) {
     e.classList.remove("nav_shadow");
+    f.classList.remove("nav_shadow");
   }
 });
 new Glide(".glide", {

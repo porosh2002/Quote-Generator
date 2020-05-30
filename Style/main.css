@@ -544,3 +544,20 @@ display: none;
     display: none;
   }
 }
+@media screen and (min-width:1041px){
+.mobile_nav{
+  display: none;
+}
+}
+@media screen and (max-width:1040px){
+.mobile_logo{
+  height:70px;
+}
+.mobile_nav{
+  height:70px;
+  position:sticky;
+  top:0;
+  background-color: #fff;
+  z-index: 9999;
+}
+}
