@@ -538,3 +538,9 @@ nav ul li {
 .nav_mega_2{
 display: none;
 }
+@media screen and (max-width:1040px){
+  .nav_mega,
+  .nav_sec{
+    display: none;
+  }
+}
