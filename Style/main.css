@@ -543,6 +543,26 @@ display: none;
   .nav_sec{
     display: none;
   }
+.nav_mob{
+  width:100%;
+  padding:50px 20px;
+  background-color: #444;
+}
+.nav_mob ul{
+display: block;
+text-align: center;
+}
+.nav_mob ul li{
+padding:10px;
+}
+.navLinks_mob{
+  color: #dfdfdf;
+  font-size:16px;
+}
+.navLinks_mob:hover{
+  color: #d2d2d2;
+  text-decoration: none;
+}
 }
 @media screen and (min-width:1041px){
 .mobile_nav{
