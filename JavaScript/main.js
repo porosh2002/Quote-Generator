@@ -7,6 +7,10 @@ $(".srvc_links_nv").click(() => {
     document.querySelector(".nav_mega").classList.add("nav_mega_2");
   });
 });
+$('.bars').click(()=>{
+  document.querySelector(".navigation_mobile ").classList.toggle("nav_mob");
+  document.querySelector("navLinks_mob").classList.toggle("nav_mob");
+})
 window.addEventListener("scroll", () => {
   const e = document.querySelector(".nav_sec");
   const f = document.querySelector(".mobile_nav");
