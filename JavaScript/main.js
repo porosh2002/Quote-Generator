@@ -9,7 +9,9 @@ $(".srvc_links_nv").click(() => {
 });
 $('.bars').click(()=>{
   document.querySelector(".navigation_mobile ").classList.toggle("nav_mob");
-  document.querySelector("navLinks_mob").classList.toggle("nav_mob");
+})
+$('.navLinks_mob').click(()=>{
+  document.querySelector(".navigation_mobile ").classList.remove("nav_mob");
 })
 window.addEventListener("scroll", () => {
   const e = document.querySelector(".nav_sec");
