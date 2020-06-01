@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  font-family: Montserrat;
+  padding: 0;
+}
+.services_sec {
+  padding: 70px 20px;
+  background-color: #444;
+  color: #fff;
+}
+.service_links_title {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin: 30px 20px;
+  text-align: center;
+  cursor: context-menu;
+  color: #edf492;
+}
+.mega_links {
+  font-size: 14px;
+  margin: 10px 20px;
+  color: #d2d2d2;
+  text-decoration: none;
+  line-height: 40px;
+  display:block;
+}
+.mega_links:hover {
+  color: #cceabb;
+}
+
