@@ -1,1 +1,36 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+body{
+    color:#444;
+}
+.sub_title {
+  display: block;
+  margin-bottom:40px;
+  font-size: 30px;
+}
+.content_pic{
+    margin-top:150px;
+    padding:0px 20px;
+    display: flex;
+    justify-content:space-between;
+}
+.des{
+    font-size:16px;
+    letter-spacing:1px;
+    line-height:30px;
+    width:650px;
+}
+.img{
+    margin-right:70px;
+}
+.path{
+  margin: 90px 0px;
+  padding:70px 20px;
+  background:url('../Image/asphalt-dark-dawn-endless-531321.jpg');
+  background-position:center;
+  background-size: cover;
+}
