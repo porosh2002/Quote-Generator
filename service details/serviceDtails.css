@@ -27,12 +27,6 @@ body{
 .img{
     margin-right:70px;
 }
-.path{
-  padding:70px 20px;
-  background:url('../Image/asphalt-dark-dawn-endless-531321.jpg');
-  background-position:center;
-  background-size: cover;
-}
 .path a{
 color: #fff;
 text-decoration: none;
@@ -41,3 +35,10 @@ text-decoration: none;
 .navLinks_mob{
   text-decoration: none;
 }
+.path span {
+  color: #d2d2d2;
+  cursor: context-menu;
+}
+.img img{
+  height:300px;
+} 
