@@ -21,7 +21,7 @@ color: #f7f7f7;
 @media screen and (min-width:900px){
     .MainDiv{
         width:600px;
-        padding:50px;
+        padding:30px 50px;
         line-height:40px;
     }
     .quote{
@@ -38,6 +38,31 @@ color: #f7f7f7;
     .fa-quote-left{
         color: #ffcd69;
         margin-right:10px;
+    }
+    .LinkDiv{
+        display: flex;
+        justify-content:space-between;
+        margin:30px 20px 0px 30px;
+    }
+    .fa-twitter{
+        font-size:30px;
+        margin-top:7px;
+        color: #1da1f2;
+        cursor: pointer;
+    }
+    .fa-twitter:hover{
+color: #ffcd69;
+    }
+    .newQuoteText{
+        font-size:16px;
+        padding:0px 10px;
+        border:1px solid #f7f7f7;
+        border-radius:3px;
+        cursor: pointer;
+    }
+    .newQuoteText:hover{
+color: #ffcd69;
+border:1px solid #ffcd69;
     }
 }
 @media screen and (max-width:899px){
