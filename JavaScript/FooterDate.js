@@ -1,1 +1,0 @@
-const footer_span=document.querySelector(".footer_span");var year=(new Date).getFullYear();footer_span.innerHTML=year;
