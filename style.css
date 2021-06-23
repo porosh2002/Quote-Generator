@@ -46,7 +46,7 @@ body{
   .quote{
     padding: 15px 10px;
     margin: 0px 5px;
-    width:90vw;
+    width:80vw;
     height:300px;
     overflow-y: scroll;
     scrollbar-width:0px;
