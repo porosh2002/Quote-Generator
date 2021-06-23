@@ -25,8 +25,7 @@ body{
 @media screen and (max-width:800px){
   .Content-quote{
     height:80vh;
-    padding:10px;
-
+    padding:10px 0px;
   }
 }
 .quote{
@@ -46,6 +45,7 @@ body{
 @media screen and (max-width:800px){
   .quote{
     padding: 15px 10px;
+    margin: 0px 5px;
     width:90vw;
     height:300px;
     overflow-y: scroll;
