@@ -1,9 +1,15 @@
-const quoteText = document.getElementById('quote');
-const authorText = document.getElementById('author');
+const quoteText = document.getElementById('quoteText');
+const authorText = document.getElementById('AuthorText');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
-
-
+const online = document.getElementById('online');
+const offline = document.getElementById('offline');
+window.addEventListener("load", () => {
+  if(navigator.onLine !== true){
+    online.classList.add('hidden')
+    offline.classList.remove('hidden')
+  }
+});
 // 
 function newQuote() {
     // Pick a random quote from array
