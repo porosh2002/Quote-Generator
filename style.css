@@ -15,27 +15,43 @@ body{
   height: 100vh;
 }
 .Content-quote{
-  max-height:80vh;
-  width:70vw;
+  height:350px;
   background-color: #fffff0;
   border-radius:3px;
-  padding:50px;
   display: flex;
   align-items: center;
+  padding:50px;
+}
+@media screen and (max-width:800px){
+  .Content-quote{
+    height:80vh;
+    padding:10px;
+
+  }
 }
 .quote{
   border-left:5px solid royalblue;
   padding: 15px 10px;
   line-height:50px;
   font-size:18px;
-
-  min-width:70vw;
+  height:150px;
+  width:800px;
   background-color: #29303b;
   user-select: none;
   color: #fff;
   letter-spacing: .5px;
   border-top-right-radius:5px;
   border-bottom-right-radius:5px;
+}
+@media screen and (max-width:800px){
+  .quote{
+    padding: 15px 10px;
+    width:90vw;
+    height:300px;
+    overflow-y: scroll;
+    scrollbar-width:0px;
+  }
+
 }
 .quote::first-letter{
   font-size:40px;
@@ -52,6 +68,14 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin: 25px 0px;
+}
+@media screen and (max-width:800px){
+  .options{
+flex-direction: column;
+    }
+    .Quote-BTN{
+      margin-bottom:15px;
+    }
 }
 .fab{
   font-size:30px;
