@@ -73,3 +73,30 @@ body{
 .hidden{
   display: none;
 }
+.QuoteBox{
+  height: 500px;
+  width:80%;
+  background-color: #fff;
+  border-radius:5px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+
+}
+
+.Box{
+  height:120px;
+  width:120px;
+  border-radius:100%;
+  position:absolute;
+right:-50px;
+top:-50px;
+  background: linear-gradient(to bottom right,#373b449f,#4286f47a);
+}
+.Quote{
+  height: 350px;
+  width: 100%;
+  border-left:5px solid royalblue;
+}
