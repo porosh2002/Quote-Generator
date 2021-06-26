@@ -1,0 +1,17 @@
+{
+    "name": "Quote",
+    "short_name": "Quote",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#29303b",
+    "theme_color": "#29303b",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "fav.png",
+        "type": "image/png", "sizes": "512x512",
+        "purpose": "any maskable"
+
+      }
+    ]
+  }

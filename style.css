@@ -8,142 +8,68 @@ body{
   background: url(./bg.png);
   background-color:#29303b;
 }
-.Content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.Content-quote{
-  height:350px;
-  background-color: #fffff0;
-  border-radius:3px;
-  display: flex;
-  align-items: center;
-  padding:50px;
-}
-@media screen and (max-width:800px){
-  .Content-quote{
-    height:80vh;
-    padding:10px 0px;
-  }
-}
-.quote{
-  border-left:5px solid royalblue;
-  padding: 15px 10px;
-  line-height:50px;
-  font-size:18px;
-  height:150px;
-  width:800px;
-  background-color: #29303b;
-  user-select: none;
-  color: #fff;
-  letter-spacing: .5px;
-  border-top-right-radius:5px;
-  border-bottom-right-radius:5px;
-}
-@media screen and (max-width:800px){
-  .quote{
-    padding: 15px 10px;
-    margin: 0px 5px;
-    width:80vw;
-    height:300px;
-    overflow-y: scroll;
-    scrollbar-width:0px;
-  }
 
+.Navigation{
+  height:70px;
+  background-color: rgb(255 255 255 / 11%);
+  margin: 15px 25px 0px 15px;
+  border-radius:5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
 }
-.quote::first-letter{
-  font-size:40px;
+@media screen and (max-width:600px){
+  .Navigation{
+    padding: 0px 20px;
+  } 
 }
-.aurthor{
-  text-transform: capitalize;
-  font-style: italic;
-  color: gray;
-  font-size:13px;
-  margin: 15px;
+.Online{
+  height:30px;
+  color: rgb(62, 194, 92);
 }
-.options{
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 25px 0px;
-}
-@media screen and (max-width:800px){
-  .options{
-flex-direction: column;
-    }
-    .Quote-BTN{
-      margin-bottom:15px;
-    }
-}
-.fab{
-  font-size:30px;
-  margin:0px 0px 0px 10px;
-  color: #0f9afb;
+.Install,.Reload{
+  height:30px;
+  color: #fff;
+  transform: rotate(270deg);
+  margin-right:20px;
   cursor: pointer;
+  transition:.3s;
 }
-.fas{
-  font-size:25px;
-  margin:0px 10px 0px 0px;
-  color: gray;
-  cursor: pointer;
+.Install:hover,.Reload:hover{
+  color: rgba(255, 255, 255, 0.74);
+  transition:.3s;
 }
-.Quote-BTN{
+.Options{
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 50px;
-  width:200px;
-  background-color: royalblue;
+}
+.Menu{
+  color: #fff;
+  height:30px;
+  cursor: pointer;
+}
+.DropDown{
+  background-color:  rgb(255 255 255 / 11%);
+  width:300px;
+  margin: 15px 25px 0px 65px;
+}
+@media screen and (max-width:600px){
+  .DropDown{
+    margin: 15px 25px 0px 35px;
+  }
+}
+.DropDown a{
+  font-size: 15px;
+  padding: 15px;
+  display: block;
   color: #fff;
   text-decoration: none;
-  border-radius:3px;
-  border:2px solid royalblue;
-  transition:.3s;
-  user-select: none;
-  cursor: pointer;
 }
-.Quote-BTN:hover, .Quote-BTN:hover .fa-cogs{
-  background-color: transparent;
-  color: royalblue;
-  transition:.3s;
-}
-.fa-cogs{
-  font-size:20px;
-  color: #fff;
-  opacity:.7;
-}
-svg{
-  height:25px;
-  color:#0080009c;
-margin:0px 15px;
-}
-
-.heading-options{
-  display: flex;
-  justify-content:flex-end;
-  align-items: center;
-  margin:25px 10px;
-}
-.offline{
-  color: orange;
-}
-.dev{
-position: absolute;
-bottom: 0;
-right: 0;
-padding:5px 10px;
-background-color:royalblue;
-font-size:12px;
-text-transform: uppercase;
-color:#fff;
-}
-.dev a{
-  color:whitesmoke;
-  font-style: italic;
-  font-size:15px;
+.DropDown a:hover{
+  background: url(./bg.png);
+  background-color: #343b46;
 }
 .hidden{
-  display:none;
+  display: none;
 }
