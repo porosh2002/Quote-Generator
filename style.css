@@ -32,10 +32,11 @@ body{
   height:30px;
   color: #fff;
   transform: rotate(270deg);
-  margin-right:20px;
+  margin-right:25px;
   cursor: pointer;
   transition:.3s;
 }
+
 .Install:hover,.Reload:hover{
   color: rgba(255, 255, 255, 0.74);
   transition:.3s;
@@ -96,7 +97,54 @@ top:-50px;
   background: linear-gradient(to bottom right,#373b449f,#4286f47a);
 }
 .Quote{
-  height: 350px;
-  width: 100%;
-  border-left:5px solid royalblue;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:50px;
+  font-style: oblique;
+  color: #29303b;
+  line-height:50px;
+  border-radius:5px;
+  background: url(./dark-wood.png);
+  background-color:#29303b;
+  color: white;
+
+}
+.QuoteText{
+  font-size: 1.2rem;
+}
+.Aurthor{
+  margin:20px 0px 0px 0px;
+  color: rgba(255, 255, 255, 0.445);
+}
+.Options-btn{
+  margin:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:25px;
+}
+.fa-cogs{
+  padding: 15px 70px;
+  font-size:20px;
+  background-color: royalblue;
+  color: #fff;
+  border-radius:3px;
+  border: 2px solid royalblue;
+  transition:.3s;
+  cursor: pointer;
+}
+.fa-cogs:hover{
+  background-color: transparent;
+  color: royalblue;
+  transition:.3s;
+}
+.fa-camera,.fa-twitter,.fa-clone{
+  margin: 0px 10px;
+  color: #29303b;
+  cursor: pointer;
+}
+.fa-twitter{
+  color: #1DA1F2;
 }
