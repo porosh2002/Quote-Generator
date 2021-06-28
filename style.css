@@ -83,10 +83,13 @@ body{
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  overflow: hidden;
-
 }
-
+@media screen and (max-width:1024px) {
+  .QuoteBox{
+    height:70vh;
+    width:90%;
+  }
+}
 .Box{
   height:120px;
   width:120px;
@@ -102,6 +105,7 @@ top:-50px;
   align-items: center;
   justify-content: center;
   margin:50px;
+  padding:0px 50px ;
   font-style: oblique;
   color: #29303b;
   line-height:50px;
@@ -110,6 +114,15 @@ top:-50px;
   background-color:#29303b;
   color: white;
 
+}
+@media screen and (max-width:1024px) {
+  .Quote{
+    height:400px;
+    overflow: scroll;
+    margin:10px;
+    padding:10px ;
+    text-align: center;
+  }
 }
 .QuoteText{
   font-size: 1.2rem;
@@ -124,6 +137,15 @@ top:-50px;
   justify-content: space-between;
   align-items: center;
   font-size:25px;
+}
+@media screen and (max-width:1024px) {
+  .Options-btn{
+    margin:20px;
+      flex-direction: column;
+  }
+  .Options-btn div{
+    margin-top:10px;
+  }
 }
 .fa-cogs{
   padding: 15px 70px;

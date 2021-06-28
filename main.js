@@ -1,4 +1,5 @@
 // const BTN = document.getElementById('PWA_ADD-BTN')
+const QuoteBox = document.getElementById('QuoteBox');
 const quoteText = document.getElementById('quoteText');
 const authorText = document.getElementById('authorText');
 const twitterBtn = document.getElementById('twitterBtn');
@@ -18,6 +19,7 @@ const SubMenuHandle = () =>{
   Burger.classList.toggle('hidden')
   Times.classList.toggle('hidden')
   DropDown.classList.toggle('hidden')
+  QuoteBox.classList.toggle('hidden')
 }
 Burger.addEventListener('click',()=>{
   SubMenuHandle()
