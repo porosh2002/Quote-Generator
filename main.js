@@ -75,10 +75,12 @@ function newQuote() {
   }
   function flashElement(quoteText) {
     quoteText.classList.add("flash");
+    authorText.classList.add("flash");
     document.addEventListener("transitionend", function() {
       setTimeout(function() {
         quoteText.classList.remove("flash");
-      }, 1000);
+        authorText.classList.remove("flash");
+      },500);
     });
   }
   // Event Listeners

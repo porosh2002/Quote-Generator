@@ -165,14 +165,5 @@ body{
 }
 .flash {
   transition: 0.2s;
-  box-shadow: 0px 0px 40px blue;
-}
-.flash:after {
-  content: "Text Copied!";
-  position: absolute;
-  left: calc(100% + 2rem);
-  width: 15rem;
-  font-size: 1.4rem;
-  color: #111;
-  /*font-family: sans-serif;*/
+  color: royalblue;
 }
