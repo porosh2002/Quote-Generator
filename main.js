@@ -1,4 +1,5 @@
 // const BTN = document.getElementById('PWA_ADD-BTN')
+const Copy = document.getElementById('Copy');
 const QuoteBox = document.getElementById('QuoteBox');
 const quoteText = document.getElementById('quoteText');
 const authorText = document.getElementById('authorText');
@@ -58,7 +59,28 @@ function newQuote() {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.innerText} - ${authorText.innerText}`;
     window.open(twitterUrl, '_blank');
   }
-  
+  Copy.addEventListener('click',()=>{
+    copyText(quoteText,authorText)
+    flashElement(quoteText)
+  })
+  function copyText(quoteText,authorText) {
+    var textToCopy = quoteText.innerText + " " +  '-'+ authorText.innerText;
+    var myTemporaryInputElement = document.createElement("input");
+    myTemporaryInputElement.type = "text";
+    myTemporaryInputElement.value = textToCopy;
+    document.body.appendChild(myTemporaryInputElement);
+    myTemporaryInputElement.select();
+    document.execCommand("Copy");
+    document.body.removeChild(myTemporaryInputElement);
+  }
+  function flashElement(quoteText) {
+    quoteText.classList.add("flash");
+    document.addEventListener("transitionend", function() {
+      setTimeout(function() {
+        quoteText.classList.remove("flash");
+      }, 1000);
+    });
+  }
   // Event Listeners
   newQuoteBtn.addEventListener('click', newQuote);
   twitterBtn.addEventListener('click', tweetQuote);
