@@ -1,9 +1,12 @@
 // const BTN = document.getElementById('PWA_ADD-BTN')
 const Copy = document.getElementById('Copy');
+const Quote = document.getElementById('Quote');
 const QuoteBox = document.getElementById('QuoteBox');
 const quoteText = document.getElementById('quoteText');
 const authorText = document.getElementById('authorText');
 const twitterBtn = document.getElementById('twitterBtn');
+const OptionsBtn = document.getElementById('OptionsBtn') 
+const Navigation = document.getElementById('Navigation') 
 const newQuoteBtn = document.getElementById('newQuoteBtn');
 const online = document.getElementById('online');
 const offline = document.getElementById('offline');
@@ -90,17 +93,23 @@ function newQuote() {
   
   // On Load
   getQuotes();
-
-
+const ClearScreenShot = ()=>{
+  Navigation.classList.toggle('hidden')
+  OptionsBtn.style.display='none'
+  QuoteBox.classList.add('scaleForShotBox')
+  Quote.classList.add('scaleForShotContent')
+  quoteText.classList.add('quoteTextFontScale')
+}
 Save.addEventListener('click',()=>{
-  domtoimage.toJpeg(document.getElementById('body'), { quality: 0.95 })
+  ClearScreenShot()
+  domtoimage.toJpeg(document.body, { quality: 1 })
   .then(function (dataUrl) {
-      var link = document.createElement('a');
-      link.download = 'my-image-name.jpeg';
-      link.href = dataUrl;
-      link.click();
-  });
+    var link = document.createElement('a');
+    link.download = 'my-image-name.jpeg';
+    link.href = dataUrl;
+    link.click();
+  }).then(()=>{
+    ClearScreenShot()
+  });})
 
-
-})
   
