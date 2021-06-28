@@ -11,22 +11,36 @@
     <title>Quote</title>
 </head>
 
-<body>
+<body id="body">
     <div class="Navigation">
         <div>
-            <svg id="Times" class="w-6 h-6 Menu hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            <svg id="Burger" class="w-6 h-6 Menu" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <svg id="Times" class="w-6 h-6 Menu hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            <svg id="Burger" class="w-6 h-6 Menu" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
         </div>
         <div class="Options">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" class="Reload h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="Install h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="Online h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728m-9.9-2.829a5 5 0 010-7.07m7.072 0a5 5 0 010 7.07M13 12a1 1 0 11-2 0 1 1 0 012 0z" />
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="Reload h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="Install h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="Online h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728m-9.9-2.829a5 5 0 010-7.07m7.072 0a5 5 0 010 7.07M13 12a1 1 0 11-2 0 1 1 0 012 0z" />
             </svg>
         </div>
     </div>
@@ -36,24 +50,26 @@
         <a href="#">Others Services</a>
     </div>
     <div id="QuoteBox" class="QuoteBox">
-        <div class="Quote">
+        <div id="Quote" class="Quote">
             <div>
-    <p id="quoteText" class="QuoteText">Action may not always bring happiness, but there is no happiness without action</p>
-    <p id="authorText" class="Aurthor">Benjamin Disraeli</p>
-</div>
+                <p id="quoteText" class="QuoteText">Action may not always bring happiness, but there is no happiness
+                    without action</p>
+                <p id="authorText" class="Aurthor">Benjamin Disraeli</p>
+            </div>
         </div>
         <!-- Actions BTN -->
         <div class="Options-btn">
-                <i id="newQuoteBtn" class="fas fa-cogs"></i>
+            <i id="newQuoteBtn" class="fas fa-cogs"></i>
 
-<div>
-    <i class="fas fa-camera"></i>
-    <i id="twitterBtn" class="fab fa-twitter"></i>
-    <i id="Copy" class="fas fa-clone"></i>
-</div>
+            <div>
+                <i id="Save" class="fas fa-camera"></i>
+                <i id="twitterBtn" class="fab fa-twitter"></i>
+                <i id="Copy" class="fas fa-clone"></i>
+            </div>
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
 <script src="./main.js"></script>
 
 </html>

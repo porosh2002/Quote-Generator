@@ -10,6 +10,7 @@ const offline = document.getElementById('offline');
 const Burger = document.getElementById('Burger')
 const Times = document.getElementById('Times')
 const DropDown = document.getElementById('DropDown')
+const Save = document.getElementById('Save')
 window.addEventListener("load", () => {
   if(navigator.onLine !== true){
     online.classList.add('hidden')
@@ -91,5 +92,15 @@ function newQuote() {
   getQuotes();
 
 
+Save.addEventListener('click',()=>{
+  domtoimage.toJpeg(document.getElementById('body'), { quality: 0.95 })
+  .then(function (dataUrl) {
+      var link = document.createElement('a');
+      link.download = 'my-image-name.jpeg';
+      link.href = dataUrl;
+      link.click();
+  });
 
+
+})
   
