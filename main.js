@@ -93,23 +93,11 @@ function newQuote() {
   
   // On Load
   getQuotes();
-const ClearScreenShot = ()=>{
-  Navigation.classList.toggle('hidden')
-  OptionsBtn.style.display='none'
-  QuoteBox.classList.add('scaleForShotBox')
-  Quote.classList.add('scaleForShotContent')
-  quoteText.classList.add('quoteTextFontScale')
-}
 Save.addEventListener('click',()=>{
-  ClearScreenShot()
-  domtoimage.toJpeg(document.body, { quality: 1 })
-  .then(function (dataUrl) {
-    var link = document.createElement('a');
-    link.download = 'my-image-name.jpeg';
-    link.href = dataUrl;
-    link.click();
-  }).then(()=>{
-    ClearScreenShot()
-  });})
+  domtoimage.toBlob(document.getElementById('Quote'))
+    .then(function (blob) {
+        window.saveAs(blob, `quote.${quoteText.innerText} ${authorText.innerText}.png`);
+    });
+})
 
   
