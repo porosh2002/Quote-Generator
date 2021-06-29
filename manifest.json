@@ -8,10 +8,10 @@
     "orientation": "portrait-primary",
     "icons": [
       {
+        "start_url": "https://stressquote.netlify.app/",
         "src": "fav.png",
         "type": "image/png", "sizes": "512x512",
         "purpose": "any maskable"
-
       }
     ]
   }
