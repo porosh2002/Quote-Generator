@@ -8,7 +8,7 @@
     "orientation": "portrait-primary",
     "icons": [
       {
-        "start_url": "./index.html",
+        "start_url": ".",
         "src": "fav.png",
         "type": "image/png", "sizes": "512x512",
         "purpose": "any maskable"

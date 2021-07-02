@@ -34,12 +34,16 @@ body{
 }
 #pwa{
   margin: 0px 10px;
+  cursor: pointer;
+}
+#reload,#times,#menu{
+  cursor: pointer;
 }
 .navigation div svg{
   height:30px;
   color: #fff;
-  cursor: pointer;
   transition:.3s;
+  margin: 0px 5px;
 }
 .hidden{
   display: none;

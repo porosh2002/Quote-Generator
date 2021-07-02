@@ -1,26 +1,26 @@
 const Times = document.getElementById('times')
 const Burger = document.getElementById('menu')
-// const BTN = document.getElementById('PWA_ADD-BTN')
 const Copy = document.getElementById('Copy');
 const Quote = document.getElementById('Quote');
+const Reload = document.getElementById('reload')
 const pwaBTN = document.getElementById('pwa')
 const QuoteBox = document.getElementById('QuoteBox');
 const quoteText = document.getElementById('quoteText');
 const authorText = document.getElementById('authorText');
 const twitterBtn = document.getElementById('twitterBtn');
-const OptionsBtn = document.getElementById('OptionsBtn') 
 const newQuoteBtn = document.getElementById('newQuoteBtn');
-const online = document.getElementById('online');
-const offline = document.getElementById('offline');
-
 const DropDown = document.getElementById('dropDown')
 const Save = document.getElementById('Save')
+const Status = document.getElementById('status')
 window.addEventListener("load", () => {
   if(navigator.onLine !== true){
-    online.classList.add('hidden')
-    offline.classList.remove('hidden')
+    Status.classList.remove('online')
+    Status.classList.add('offline')
   }
 });
+Reload.addEventListener('click',()=>{
+  location.reload()
+})
 const SubMenuHandle = () =>{
   Burger.classList.toggle('hidden')
   Times.classList.toggle('hidden')
