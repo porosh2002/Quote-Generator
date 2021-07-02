@@ -7,7 +7,10 @@
 body{
   background: url(./bg.png);
   background-color:#29303b;
-  overflow: hidden !important;
+}
+html,body{
+  position: relative;
+  overflow: hidden;
 }
 .flex{
   display: flex;
@@ -149,6 +152,11 @@ font-size:13px;
 text-transform: uppercase;
 font-weight:600;
 letter-spacing:1px;
+}
+@media screen and (max-width:1024px) {
+  #dropDown{
+    width:250px;
+  }
 }
 #dropDown a{
   padding:20px;
