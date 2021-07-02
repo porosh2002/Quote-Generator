@@ -13,7 +13,7 @@ const newQuoteBtn = document.getElementById('newQuoteBtn');
 const online = document.getElementById('online');
 const offline = document.getElementById('offline');
 
-const DropDown = document.getElementById('DropDown')
+const DropDown = document.getElementById('dropDown')
 const Save = document.getElementById('Save')
 window.addEventListener("load", () => {
   if(navigator.onLine !== true){
@@ -25,7 +25,7 @@ const SubMenuHandle = () =>{
   Burger.classList.toggle('hidden')
   Times.classList.toggle('hidden')
   DropDown.classList.toggle('hidden')
-  QuoteBox.classList.toggle('hidden')
+  QuoteBox.classList.toggle('outOfScrren')
 }
 Burger.addEventListener('click',()=>{
   SubMenuHandle()

@@ -7,6 +7,7 @@
 body{
   background: url(./bg.png);
   background-color:#29303b;
+  overflow: hidden !important;
 }
 .flex{
   display: flex;
@@ -16,7 +17,7 @@ body{
 .navigation{
   height:70px;
   background-color: rgb(255 255 255 / 11%);
-  margin: 15px 25px 0px 15px;
+  margin: 15px 25px 0px 25px;
   border-radius:5px;
   padding: 0px 50px;
 }
@@ -40,32 +41,10 @@ body{
   cursor: pointer;
   transition:.3s;
 }
-
-.DropDown{
-  background-color:  rgb(255 255 255 / 11%);
-  width:300px;
-  margin: 15px 25px 0px 65px;
-}
-@media screen and (max-width:600px){
-  .DropDown{
-    margin: 15px 25px 0px 35px;
-  }
-}
-.DropDown a{
-  font-size: 15px;
-  padding: 15px;
-  display: block;
-  color: #fff;
-  text-decoration: none;
-}
-.DropDown a:hover{
-  background: url(./bg.png);
-  background-color: #343b46;
-}
 .hidden{
   display: none;
 }
-.QuoteBox{
+#QuoteBox{
   height: 500px;
   width:80%;
   background-color: #fff;
@@ -75,19 +54,17 @@ body{
   left:50%;
   transform: translate(-50%,-50%);
   overflow: hidden;
+  transition:.3s;
 }
 @media screen and (max-width:1024px) {
-  .QuoteBox{
+  #QuoteBox{
     height:70vh;
     width:90%;
   }
 }
 
-.Quote{
+#Quote{
   height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin:50px;
   padding:0px 50px ;
   font-style: oblique;
@@ -100,7 +77,7 @@ body{
 
 }
 @media screen and (max-width:1024px) {
-  .Quote{
+  #Quote{
     height:45vh;
     overflow: scroll;
     margin:10px;
@@ -109,31 +86,28 @@ body{
     line-height:30px;
   }
 }
-.QuoteText{
+#quoteText{
   font-size: 1.2rem;
 }
 @media screen and (max-width:400px){
-  .QuoteText,.Aurthor{
+  #quoteText,#authorText{
     font-size:15px;
   }
 }
-.Aurthor{
+#authorText{
   margin:20px 0px 0px 0px;
   color: rgba(255, 255, 255, 0.445);
 }
-.Options-btn{
+.actionsBTN{
   margin:50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size:25px;
 }
 @media screen and (max-width:1024px) {
-  .Options-btn{
+  .actionsBTN{
     margin:20px;
       flex-direction: column;
   }
-  .Options-btn div{
+  .actionsBTN div{
     margin-top:10px;
   }
 }
@@ -162,15 +136,34 @@ body{
 }
 .flash {
   transition: 0.2s;
-  color: royalblue;
+  color: rgba(255, 255, 255, 0.445);
 }
-/* .scaleForShotBox{
-  height:100vh;
-  width:90vw;
+#dropDown{
+width:300px;
+margin:5px 0px 0px 25px;
+font-size:13px;
+text-transform: uppercase;
+font-weight:600;
+letter-spacing:1px;
 }
-.scaleForShotContent{
-  height: 90vh;
+#dropDown a{
+  padding:20px;
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  transition:.3s;
+  background-color: rgb(255 255 255 / 11%);
+  border-radius:1px;
+  margin:1px 0px;
+  
 }
-.quoteTextFontScale{
-  font-size:1.7rem;
-} */
+#dropDown a:hover{
+  margin: 0px 0px 0px 20px;
+  transition:.3s;
+  background-color: #fff;
+  color: #29303b;
+}
+.outOfScrren{
+  margin-left:500px;
+  transition:.3s;
+}
