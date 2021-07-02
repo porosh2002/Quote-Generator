@@ -1,18 +1,18 @@
+const Times = document.getElementById('times')
+const Burger = document.getElementById('menu')
 // const BTN = document.getElementById('PWA_ADD-BTN')
 const Copy = document.getElementById('Copy');
 const Quote = document.getElementById('Quote');
-const pwaBTN = document.getElementById('PWA')
+const pwaBTN = document.getElementById('pwa')
 const QuoteBox = document.getElementById('QuoteBox');
 const quoteText = document.getElementById('quoteText');
 const authorText = document.getElementById('authorText');
 const twitterBtn = document.getElementById('twitterBtn');
 const OptionsBtn = document.getElementById('OptionsBtn') 
-const Navigation = document.getElementById('Navigation') 
 const newQuoteBtn = document.getElementById('newQuoteBtn');
 const online = document.getElementById('online');
 const offline = document.getElementById('offline');
-const Burger = document.getElementById('Burger')
-const Times = document.getElementById('Times')
+
 const DropDown = document.getElementById('DropDown')
 const Save = document.getElementById('Save')
 window.addEventListener("load", () => {
