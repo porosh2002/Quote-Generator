@@ -8,10 +8,6 @@ body{
   background: url(./bg.png);
   background-color:#29303b;
 }
-html,body{
-  position: relative;
-  overflow: hidden;
-}
 .flex{
   display: flex;
   justify-content: space-between;
@@ -61,7 +57,7 @@ html,body{
   left:50%;
   transform: translate(-50%,-50%);
   overflow: hidden;
-  transition:.3s;
+  transition:.5s;
 }
 @media screen and (max-width:1024px) {
   #QuoteBox{
@@ -176,6 +172,7 @@ letter-spacing:1px;
   color: #29303b;
 }
 .outOfScrren{
-  margin-left:500px;
-  transition:.3s;
+opacity:0;
+z-index:-1;
+transition:.3s;
 }
